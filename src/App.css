@@ -1,7 +1,13 @@
 .App {
   text-align: center;
 }
-
+.App-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ 
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +41,72 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.board-row {
+  outline: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.board-row .square {
+  padding: 1.5rem;
+}
+ .one {
+  background: #d32b2b;
+ }
+ .two {
+  background: #18db79;
+ }
+
+.reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 48%;
+  margin-top: 2rem;
+}
+
+.video-cont {
+  background: #585858;
+  color: rgb(158, 26, 26);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5rem;
+  width: 400px;
+}
+.video {
+  height: 50px;
+  width: 100px;
+}
+.list-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.form-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.name {
+  border-bottom: 1px solid gray;
+}
+
+.ref-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40rem;
+}
+.ref-ul li img {
+  height: 300px;
+  width: 300px;
 }
